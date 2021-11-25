@@ -150,16 +150,13 @@ def event_handle(event,json_line):
     if msgType == "text":
         msg = str(event["message"]["text"])
         if (msg == "สวัสดี") :
-            replyObj = TextSendMessage(text="ดีด้วย")
+            replyObj = TextSendMessage(text="สวัสดีคั้บบ")
             line_bot_api.reply_message(rtoken, replyObj)
         elif (msg == "ไปเที่ยวกันไหม") :
-            replyObj = TextSendMessage(text="ไม่ดีกว่า")
+            replyObj = TextSendMessage(text="ไปกันนนน")
             line_bot_api.reply_message(rtoken, replyObj)
         elif (msg == "ไปกินข้าวกันไหม") :
             replyObj = TextSendMessage(text="ไปสิ")
-            line_bot_api.reply_message(rtoken, replyObj)
-        elif (msg == "น่ารักจัง") :
-            replyObj = TextSendMessage(text="ขอบคุณน้า")
             line_bot_api.reply_message(rtoken, replyObj)
         elif (msg == "รักน้า") :
             replyObj = TextSendMessage(text="กอดๆ")
